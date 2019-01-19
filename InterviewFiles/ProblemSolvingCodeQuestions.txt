@@ -1,0 +1,48 @@
+8. Problem Solving Coding Questions
+So far we have seen most of the programming questions based upon data structure and algorithms but sometime you will also find questions from software design, Dynamic Programming, and other logical and tricky questions.
+
+Here is a collection of some of those questions for your practice:
+
+Swap two numbers without using the third variable? (solution)
+
+Check if two rectangles overlap with each other? (solution)
+
+Design a Vending Machine? (solution)
+
+Implement an LRU Cache in your favorite programming language? (solution)
+
+Check if a given number is a Palindrome? (solution)
+
+Check if a given number is an Armstrong number? (solution)
+
+Find all prime factors of a given number? (solution)
+
+Check if a given number is a positive or negative in Java? (solution)
+
+Find the largest prime factor of a given integral number? (solution)
+
+Print all prime numbers up to a given number? (solution)
+
+Print Floyd's triangle? (solution)
+
+Print Pascal's triangle? (solution)
+
+Calculate the square root of a given number? (solution)
+
+Check if given number is a prime number? (solution)
+
+Add two numbers without using plus operator in Java? (solution)
+
+Check if a given number is even/odd without using Arithmetic operator? (solution)
+
+Print a given Pyramid structure? (solution)
+
+Find the highest repeating world from a given file in Java? (solution)
+
+Reverse given Integer in Java? (solution)
+
+Convert a decimal number to binary in Java? (solution)
+
+Check if a given year is a leap year in Java? (solution)
+
+Read more: http://www.java67.com/2018/06/data-structure-and-algorithm-interview-questions-programmers.html#ixzz5cK7rbGfA
