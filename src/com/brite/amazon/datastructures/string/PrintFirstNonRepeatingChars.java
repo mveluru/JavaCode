@@ -1,25 +1,37 @@
 package com.brite.amazon.datastructures.string;
 
-import java.util.ArrayList;
-import java.util.List;
-//not working
+import java.util.Hashtable;
+import java.util.Map;
+
+//not work
 public class PrintFirstNonRepeatingChars {
 
 	public void nonRepeatingChar(String s) {
-		List<Character> chars = new ArrayList<>();
+		Map<Character, Integer> charCount = new Hashtable<>();
 		for (int i = 0; i < s.length(); i++) {
-			if (!chars.contains(s.charAt(i))) {
-				chars.add(s.charAt(i));
+			char key = s.charAt(i);
+			if (!charCount.containsKey(key)) {
+				charCount.put(key, 1);
 			} else {
-				//chars.remove(s.charAt(i));
+				int count = charCount.get(key);
+				charCount.put(key, ++count);
+
 			}
 		}
-		System.out.println(chars.get(0));
+
+		char[] chars = s.toCharArray();
+		for (int i = 0; i < chars.length; i++) {
+			if (1 == charCount.get(chars[i])) {
+				System.out.println(chars[i]);
+				break;
+			}
+		}
+
 	}
 
 	public static void main(String[] args) {
 		PrintFirstNonRepeatingChars pf = new PrintFirstNonRepeatingChars();
-		pf.nonRepeatingChar("LLILLY");
+		pf.nonRepeatingChar("MMMMMMMADMMMM");
 
 	}
 }
