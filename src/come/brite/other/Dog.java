@@ -1,7 +1,13 @@
 package come.brite.other;
 
+
 class Dog extends Animal {
-    private String breed;
+
+	Dog(String name) {
+		super(name);
+		
+	}
+   /* private String breed;
     Dog(String breed) {
         this.breed = breed;
     }
@@ -19,5 +25,5 @@ class Dog extends Animal {
         Dog dog2 = new Dog("Bubbly", "Poodle");
         System.out.println(dog1.getName() + ":" + dog1.getBreed() + ":" + 
                             dog2.getName() + ":" + dog2.getBreed());
-    }
+    }*/
 }
