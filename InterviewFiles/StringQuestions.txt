@@ -31,4 +31,3 @@ Check if two String is a rotation of each other? (solution)
 
 Check if given String is Palindrome? (solution)
 
-Read more: http://www.java67.com/2018/06/data-structure-and-algorithm-interview-questions-programmers.html#ixzz5cK6kx6Gm
