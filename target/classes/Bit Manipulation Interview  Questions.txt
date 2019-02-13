@@ -1,0 +1,14 @@
+7. Bit Manipulation Interview Questions
+Last but not the least, we will see some bit manipulation based questions. There is a popular saying that, there are two kinds of programmers, one who knows binary and other's who don't.
+
+Yes, understand binary and playing with bits is an important skill for good programmers. Every major programming language e.g. Java and C++ provide both bitwise and bit shift operators, which you can use to manipulate bits and solve problems.
+
+Check if a number is the power of two? (solution)
+
+Check if a number is even or odd without using modulo operator? (solution)
+
+Subtract two binary numbers? (solution)
+
+Find the number of 1s (the Set bit) in a given Bit Sequence? (solution)
+
+Read more: http://www.java67.com/2018/06/data-structure-and-algorithm-interview-questions-programmers.html#ixzz5cK7ka1F6

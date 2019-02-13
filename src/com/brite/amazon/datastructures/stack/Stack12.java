@@ -1,56 +1,59 @@
 package com.brite.amazon.datastructures.stack;
 
-public class Stack01 {
+public class Stack12 {
 	int[] stack;
 	int top = -1;
 
-	public Stack01(int size) {
+	public Stack12(int size) {
 		this.stack = new int[size];
+
 	}
 
+	// push from top
 	public void push(int data) {
 		if (!isStackFull()) {
-			stack[++top] = data;
+			this.stack[++top] = data;
 		} else {
-			System.out.println("Over Flow");
+			System.out.println("Stack is full");
 		}
-
 	}
 
 	public void pop() {
+
 		if (!isStackEmpty()) {
-			int entry = stack[top--];
-			System.out.println("Removed stack Element " + entry);
+			int entry = this.stack[top--];
+			System.out.println("removed Entry " + entry);
 		} else {
-			System.out.println("Under Flow");
+			System.out.println("under flow");
 		}
 
 	}
 
 	public int peek() {
+
 		return this.stack[top];
+
 	}
 
 	private boolean isStackEmpty() {
-		return this.top == -1;
+		return top == -1;
 	}
 
 	private boolean isStackFull() {
+
 		return this.stack.length - 1 == this.top;
 	}
 
 	public static void main(String[] args) {
-		Stack01 stack = new Stack01(10);
+		Stack11 stack = new Stack11(10);
 		for (int i = 0; i < 11; i++) {
 			stack.push(i);
 		}
-		for (int i = 1; i < 4; i++) {
-			try {
-				stack.pop();
-			} catch (Exception e) {
 
-				e.printStackTrace();
-			}
+		System.out.println("Peek " + stack.peek());
+
+		for (int i = 0; i < 11; i++) {
+			stack.pop();
 		}
 
 	}

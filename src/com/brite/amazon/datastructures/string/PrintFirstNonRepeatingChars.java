@@ -31,7 +31,7 @@ public class PrintFirstNonRepeatingChars {
 
 	public static void main(String[] args) {
 		PrintFirstNonRepeatingChars pf = new PrintFirstNonRepeatingChars();
-		pf.nonRepeatingChar("MMMMMMMADMMMM");
+		pf.nonRepeatingChar("MMMMBMMMADMMMM");
 
 	}
 }

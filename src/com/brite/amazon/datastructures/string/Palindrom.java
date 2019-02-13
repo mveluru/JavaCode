@@ -36,10 +36,21 @@ public boolean isPalindrom02(String s){
 	 }
 	return s.equals(sb.toString());
 }
+
+
+public boolean isPalindrom03(String s ) {
+	char[] schar = s.toCharArray();
+	StringBuffer sb = new StringBuffer();
+	for(int i=schar.length-1;i>=0;i--) {
+		sb.append(schar[i]);
+	}
+	return s.equals(sb.toString());
+}
 	public static void main(String[] args) {
 		Palindrom p = new Palindrom();
 		System.out.println(p.isPalindrome("level"));
 		System.out.println(p.isPalindrome01("level"));
 		System.out.println(p.isPalindrom02("level"));
+		System.out.println(p.isPalindrom03("level"));
 	}
 }

@@ -1,52 +1,47 @@
 package com.brite.amazon.datastructures.queue;
 
 public class Queue01 {
-	// FFIO
-
-	int front = 0;
-	int rear = -1;
 	int[] queue;
-	int currentSize;
-
-	public Queue01(int size) {
-		queue = new int[size];
-		this.currentSize = 0;
+	int front=0;
+	int rear=-1;
+	int currentSize=0;
+	public Queue01(int size){
+		this.queue = new int[size];
 	}
-
-	public void enqueue(int data) {
-		if (!isQueueFull()) {
-			this.rear++;
-			queue[this.rear] = data;
+	
+	public void enqueue(int data){
+		if(!isQueueFull()){
+			queue[++rear]=data;
 			this.currentSize++;
-		} else {
-			System.out.println("Queue is Full");
+		}else{
+			System.out.println("Queue over flow");
 		}
 	}
-
 	// FFIO
-	public void dequeue() {
-		if (!isQueueEmpty()) {
-			int entry = queue[this.front];
-			this.front++;
-			System.out.println("Dequeued Element " + entry);
-			currentSize--;
-		} else {
-			System.out.println("Queue is Underflow");
+	public void dequeue(){
+		if(!isQueueEmpty()){
+			int entry = queue[front++];		
+			this.currentSize--;
+			System.out.println("Removed Entry "+entry);
+		}else{
+			System.out.println("Queue Under flow");
 		}
-
+		
+	}
+	
+	private boolean isQueueEmpty(){
+		return this.currentSize==0;
+	}
+	
+	private boolean isQueueFull(){
+		return this.currentSize == this.queue.length-1;
 	}
 
-	private int queueSize() {
+	
+	public int queueSize(){
 		return this.currentSize;
 	}
-
-	private boolean isQueueEmpty() {
-		return this.currentSize == 0;
-	}
-
-	private boolean isQueueFull() {
-		return queue.length == this.currentSize;
-	}
+	
 
 	public static void main(String[] args) {
 		Queue01 queue = new Queue01(20);
@@ -77,7 +72,7 @@ public class Queue01 {
 		queue.dequeue();
 		queue.dequeue();
 		queue.dequeue();
-		//queue.dequeue();
+		queue.dequeue();
 		System.out.println("Current queue size is .." + queue.queueSize());
 
 	}
