@@ -18,10 +18,25 @@ public class NoTInPlace_ReverseArray {
 		
 	}
 	
+	
+	public void reverseArray(int[] input) {
+		int length = input.length;
+		int[] rev = new int[length];
+		for(int i=0;i<length;i++) {
+			rev[length-i-1]=input[i];
+		}
+		for(int i=0;i<length;i++) {
+			input[i]=rev[i];
+			System.out.print(" "+input[i]);
+		}
+		
+	}
+	
 	public static void main(String[] args) {
 		int[] input = {1,2,3,4,5,6,7,8,9};
 		NoTInPlace_ReverseArray  notinPlan = new NoTInPlace_ReverseArray();
-		notinPlan.reversedArray(input);
+		//notinPlan.reversedArray(input);
+		notinPlan.reverseArray(input);
 		
 	}
 }

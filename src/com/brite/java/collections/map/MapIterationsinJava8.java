@@ -1,4 +1,4 @@
-package com.brite.java8features;
+package com.brite.java.collections.map;
 
 import java.util.HashMap;
 import java.util.Iterator;

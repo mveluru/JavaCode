@@ -1,12 +1,12 @@
 package com.brite.amazon.datastructures.sorting;
 
-public class QuickSort05 {
+public class QuickSort06 {
 	int[] array;
 
 	public void quickSort(int[] input) {
 		this.array = input;
-		int length = array.length;
-		quicSort(0, length - 1);
+		int len = this.array.length;
+		quicSort(0, len - 1);
 
 	}
 
@@ -30,19 +30,18 @@ public class QuickSort05 {
 			}
 			if (lowerIndex < j) {
 				quicSort(lowerIndex, j);
-
 			}
+
 			if (i < higherIndex) {
 				quicSort(i, higherIndex);
 			}
+
 		}
 
 	}
-	
-	
 
 	public static void main(String[] args) {
-		QuickSort05 sorter = new QuickSort05();
+		QuickSort06 sorter = new QuickSort06();
 		int[] input = { 24, 2, 45, 20, 56, 75, 2, 55, 99, 53, 12, 100, 52 };
 		sorter.quickSort(input);
 		System.out.println(" Final Sorting Result");
@@ -51,4 +50,5 @@ public class QuickSort05 {
 			System.out.print(" ");
 		}
 	}
+
 }

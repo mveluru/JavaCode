@@ -25,6 +25,15 @@ public class TowersOfHanoi {
 		   }
 	   }
 
+	   public void solvess(int n,String start ,String auxilary , String end) {
+		   if(n==1){
+			  System.out.println(start+" --> "+end); 
+		   }else {
+			   solvess(n-1,start,end,auxilary);
+			   System.out.println(start+" --> "+end);
+			   solvess(n-1, start,auxilary,end);
+		   }
+	   }
 	   public static void main(String[] args) {
 	       TowersOfHanoi towersOfHanoi = new TowersOfHanoi();
 	       System.out.print("Enter number of discs: ");
@@ -32,6 +41,6 @@ public class TowersOfHanoi {
 	      // int discs = scanner.nextInt();
 	       int discs=3;
 	       towersOfHanoi.solve(discs, "A", "B", "C");
-	       //towersOfHanoi.solves(discs, "D", "E", "F");
+	       towersOfHanoi.solvess(discs, "A", "B", "C");
 	   }
 	}

@@ -29,6 +29,12 @@ public class RemoveDuplicate {
 		dupslist.addAll(mergeList);
 		System.out.println("solution-2");
 		dupslist.stream().sorted().distinct().forEach(i -> System.out.print(" " + i));
+		
+		//pratice
+		List<Integer> duplists = new ArrayList<>();
+		duplists.addAll(mergeList);
+		System.out.println("\nsolution-21");
+		duplists.stream().sorted().distinct().forEach(i->System.out.print(" "+i));
 
 	}
 

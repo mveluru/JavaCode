@@ -19,6 +19,18 @@ public class MissingNumber {
 		System.out.println("Missing Number is "+sum);
 	}
 	
+	public void missingNumberInSeq02(int[] input) {
+		int n = input.length;
+		int sum = ((n+1)*(n+2))/2;
+		System.out.println("sum " +sum);
+		for(int i=0;i<input.length;i++) {
+			sum = sum -input[i];
+		}
+		System.out.println(sum);
+	}
+	
+	
+	
 	public int getsum(int[] array){
 		int n = array.length;
 		int sum = ((n+1) * (n+2))/2;
@@ -39,9 +51,11 @@ public class MissingNumber {
 		int[] input01 ={1,2,3,4,5,7,8,9,10};
 		int[] numarray = new int[] {1, 2,5, 6, 3, 7, 8};
 		MissingNumber mn = new MissingNumber();
-		mn.missingNumberinSeq(input);
-		mn.missingNumberinSeq01(input01);
-		mn.missingNum(numarray);
+		/*
+		 * mn.missingNumberinSeq(input); mn.missingNumberinSeq01(input01);
+		 * mn.missingNum(numarray);
+		 */
+		mn.missingNumberInSeq02(numarray);
 		
 	}
 

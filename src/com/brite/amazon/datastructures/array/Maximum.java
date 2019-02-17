@@ -7,7 +7,7 @@ public class Maximum {
 		int j= input.length-1;
 		int lowerIndexNumber=0;
 		int higherIndexNumber=0;
-		while (i<j){
+		while (i<=j){
 			lowerIndexNumber = (input[i] > lowerIndexNumber)? input[i]:lowerIndexNumber;
 			higherIndexNumber = (input[j]> higherIndexNumber)? input[j]:higherIndexNumber;
 			i++;

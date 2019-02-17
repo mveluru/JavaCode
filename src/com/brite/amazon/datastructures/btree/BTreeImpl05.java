@@ -109,7 +109,7 @@ public class BTreeImpl05 {
 		if (root==null){
 			return -1;
 		}
-		return Math.max(getHeightofTree(root.getLeft()),getHeightofTree(root.getLeft()))+1;
+		return Math.max(getHeightofTree(root.getLeft()),getHeightofTree(root.getRight()))+1;
 		 
 	}
 	
