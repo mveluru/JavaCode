@@ -1,4 +1,4 @@
-package com.brite.amazon.datastructures.array;
+package com.brite.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
